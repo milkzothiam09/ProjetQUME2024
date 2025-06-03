@@ -20,7 +20,6 @@ class BoissonTest {
     void testMettreAJourPrix() {
         Boisson boisson = new Boisson(2, "Thé Vert", 1.80,
                 "Thé vert bio", Boisson.Categorie.THE, "Lipton");
-
         boisson.mettreAJourPrix(2.00);
         assertEquals(2.00, boisson.getPrix(), 0.001);
     }
@@ -29,7 +28,6 @@ class BoissonTest {
     void testMettreAJourPrixNegatif() {
         Boisson boisson = new Boisson(3, "Eau Minérale", 1.00,
                 "Eau minérale naturelle", Boisson.Categorie.EAU, "Evian");
-
         assertThrows(IllegalArgumentException.class,
                 () -> boisson.mettreAJourPrix(-1.00));
     }

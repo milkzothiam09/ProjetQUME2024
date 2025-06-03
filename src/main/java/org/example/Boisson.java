@@ -26,13 +26,17 @@ public class Boisson {
         return this.categorie;
     }
 
+    public String getMarque() {
+        return this.marque;
+    }
+
     public enum Categorie {
         BOISSON,
         CAFE,
         THE,
         EAU,
         CHOCOLAT,
-        JUS
+        SODA, JUS
     }
 
 
